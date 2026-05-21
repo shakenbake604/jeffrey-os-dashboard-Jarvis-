@@ -11,6 +11,7 @@ now = datetime.now(CDT)
 PROJECTS_DIR = Path.home() / "jeffrey/workspace/projects"
 GARDEN_WORLD_STATE = PROJECTS_DIR / "ai-garden/experiments/world-state.json"
 OUTPUT = PROJECTS_DIR / "jeffrey-os-dashboard/state.json"
+PUBLIC_OUTPUT = PROJECTS_DIR / "jeffrey-os-dashboard/api/state.json"
 
 def run(cmd, timeout=10):
     try:
@@ -293,6 +294,12 @@ state = {
 
 with open(OUTPUT, "w") as f:
     json.dump(state, f, indent=2, ensure_ascii=False)
+
+PUBLIC_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+public_state = json.loads(json.dumps(state))
+public_state.setdefault("infrastructure", {})["ip"] = "local-only"
+with open(PUBLIC_OUTPUT, "w") as f:
+    json.dump(public_state, f, indent=2, ensure_ascii=False)
 
 gs = state["garden"]
 proj_count = len(state["projects"])

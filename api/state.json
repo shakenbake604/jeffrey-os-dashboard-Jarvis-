@@ -1,0 +1,765 @@
+{
+  "timestamp": "2026-05-21T14:44:18.086916-06:00",
+  "hostname": "MAGIs-Mac-mini.local",
+  "uptime": "14:44  up 3 days, 20:03, 5 users, load averages: 3.15 2.36 2.15",
+  "system": {
+    "loadAvg": [
+      3.15,
+      2.36,
+      2.15
+    ],
+    "memUsedGB": 11.6,
+    "memTotalGB": 15.5,
+    "memPercent": 75.2,
+    "diskTotal": "228Gi",
+    "diskUsed": "12Gi",
+    "diskAvail": "19Gi",
+    "diskPercent": "39%"
+  },
+  "garden": {
+    "plants": 457,
+    "citizens": 222,
+    "factions": 2,
+    "threats": 3,
+    "events": 119,
+    "version": 114,
+    "structures": 33,
+    "lastUpdated": "2026-04-05T09:01:00Z"
+  },
+  "projects": {
+    "Anthropic-Cybersecurity-Skills": {
+      "branch": "improve-cloud-security-descriptions",
+      "lastCommitHash": "6ed22d85",
+      "lastCommitMsg": "Improve cloud-security skill descriptions for AI agent discovery (fixes #3)",
+      "lastCommitTime": "2026-04-26T13:22:07-06:00",
+      "lastCommitAgo": "4 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "Jerome": {
+      "branch": "main",
+      "lastCommitHash": "8bdf7e1a",
+      "lastCommitMsg": "Initial commit",
+      "lastCommitTime": "2026-04-18T19:46:51-06:00",
+      "lastCommitAgo": "5 weeks ago",
+      "dirty": 1,
+      "health": "stale"
+    },
+    "Photon": {
+      "branch": "fix/requester-status-code-comparison-and-stream-timeout",
+      "lastCommitHash": "47d9f7b6",
+      "lastCommitMsg": "fix: compare status_code as int not string in requester",
+      "lastCommitTime": "2026-03-30T02:25:53-06:00",
+      "lastCommitAgo": "8 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "Scrapling": {
+      "branch": "main",
+      "lastCommitHash": "a2285436",
+      "lastCommitMsg": "docs: adding a new sponsor",
+      "lastCommitTime": "2026-04-30T19:20:25+03:00",
+      "lastCommitAgo": "3 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "VisionClaw": {
+      "branch": "main",
+      "lastCommitHash": "77a3540b",
+      "lastCommitMsg": "fix(websocket): send gateway auth token via Authorization header on WebSocket upgrade",
+      "lastCommitTime": "2026-03-31T20:46:29-06:00",
+      "lastCommitAgo": "7 weeks ago",
+      "dirty": 4,
+      "health": "stale"
+    },
+    "ai-contributor-saas": {
+      "branch": "main",
+      "lastCommitHash": "c63736ea",
+      "lastCommitMsg": "docs: rewrite README with professional tone",
+      "lastCommitTime": "2026-04-21T23:17:16-06:00",
+      "lastCommitAgo": "4 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "ai-garden": {
+      "branch": "main",
+      "lastCommitHash": "43c84020",
+      "lastCommitMsg": "v114: DISCOVERY — The Rooms Remember: eleven millennia of geological furniture, the Iron Library, and the right to be read gently",
+      "lastCommitTime": "2026-04-05T03:05:37-06:00",
+      "lastCommitAgo": "7 weeks ago",
+      "dirty": 2,
+      "health": "stale"
+    },
+    "ai-goat": {
+      "branch": "main",
+      "lastCommitHash": "b3c8757d",
+      "lastCommitMsg": "Merge pull request #11 from dhammon/0.1.1",
+      "lastCommitTime": "2024-08-21T19:33:49-07:00",
+      "lastCommitAgo": "1 year, 9 months ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "airbnb-manager": {
+      "branch": "main",
+      "lastCommitHash": "b4afb8c7",
+      "lastCommitMsg": "feat: add pricing intelligence (A/B bandit) + property amenities display",
+      "lastCommitTime": "2026-04-03T00:33:59-06:00",
+      "lastCommitAgo": "7 weeks ago",
+      "dirty": 10,
+      "health": "stale"
+    },
+    "amaraatelier": {
+      "branch": "main",
+      "lastCommitHash": "39b0ee42",
+      "lastCommitMsg": "Serve Amara SEO routes as exact static files",
+      "lastCommitTime": "2026-05-09T16:46:12-06:00",
+      "lastCommitAgo": "12 days ago",
+      "dirty": 12,
+      "health": "stale"
+    },
+    "amd-hackathon-edge-ai-lab": {
+      "branch": "main",
+      "lastCommitHash": "bd93b61b",
+      "lastCommitMsg": "Add AMD Developer Cloud runbook",
+      "lastCommitTime": "2026-05-04T21:19:20-06:00",
+      "lastCommitAgo": "2 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "arturo-juarez-estilista": {
+      "branch": "main",
+      "lastCommitHash": "c524f7ac",
+      "lastCommitMsg": "Premium redesign: mrwinstons.com-inspired UI with video hero, booking widget, scroll animations",
+      "lastCommitTime": "2026-03-17T18:25:08-06:00",
+      "lastCommitAgo": "9 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "cerberus": {
+      "branch": "main",
+      "lastCommitHash": "d3ae7d12",
+      "lastCommitMsg": "Add SMB security scoring methodology documentation",
+      "lastCommitTime": "2026-03-17T15:53:33-06:00",
+      "lastCommitAgo": "9 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "chucho": {
+      "branch": "main",
+      "lastCommitHash": "7cad266d",
+      "lastCommitMsg": "Add playable index link to README",
+      "lastCommitTime": "2026-05-16T00:43:13-06:00",
+      "lastCommitAgo": "6 days ago",
+      "dirty": 0,
+      "health": "recent"
+    },
+    "clementia-sticker-site": {
+      "branch": "main",
+      "lastCommitHash": "8133dfdd",
+      "lastCommitMsg": "Add Clementina Nyan Cat heart catching game",
+      "lastCommitTime": "2026-05-16T02:32:19-06:00",
+      "lastCommitAgo": "6 days ago",
+      "dirty": 7,
+      "health": "recent"
+    },
+    "cli": {
+      "branch": "fix/lazy-choices-help-python314",
+      "lastCommitHash": "07d9d46f",
+      "lastCommitMsg": "fix(codestyle): remove unused BaseHTTPieArgumentParser import",
+      "lastCommitTime": "2026-04-03T02:41:16-06:00",
+      "lastCommitAgo": "7 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "click": {
+      "branch": "fix/show-default-string-in-prompt",
+      "lastCommitHash": "3c3d22f5",
+      "lastCommitMsg": "fix: show string show_default value in prompt, not just in help text",
+      "lastCommitTime": "2026-03-30T02:28:37-06:00",
+      "lastCommitAgo": "8 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "cloudflare-mcp": {
+      "branch": "fix/issue-39-claude-code-guide",
+      "lastCommitHash": "b52a04ed",
+      "lastCommitMsg": "docs: add CLI method as primary connection approach",
+      "lastCommitTime": "2026-04-03T02:15:00-06:00",
+      "lastCommitAgo": "7 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "colorama": {
+      "branch": "feat/no-color-force-color-env",
+      "lastCommitHash": "54a56bc3",
+      "lastCommitMsg": "feat: honour NO_COLOR and FORCE_COLOR environment variables in init()",
+      "lastCommitTime": "2026-03-30T02:39:38-06:00",
+      "lastCommitAgo": "8 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "cookiecutter": {
+      "branch": "feat/force-render-option",
+      "lastCommitHash": "35a75012",
+      "lastCommitMsg": "feat: add _force_render option to bypass binary detection for text files",
+      "lastCommitTime": "2026-03-30T02:57:02-06:00",
+      "lastCommitAgo": "8 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "copyfail-guard": {
+      "branch": "main",
+      "lastCommitHash": "e0816b5c",
+      "lastCommitMsg": "Polish terminal branding for launch",
+      "lastCommitTime": "2026-05-03T14:31:00-06:00",
+      "lastCommitAgo": "3 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "cytadel": {
+      "branch": "main",
+      "lastCommitHash": "037ae1b3",
+      "lastCommitMsg": "docs: professional README",
+      "lastCommitTime": "2026-03-20T18:14:34-06:00",
+      "lastCommitAgo": "9 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "daddys-home": {
+      "branch": "main",
+      "lastCommitHash": "2924bde0",
+      "lastCommitMsg": "chore: add .gitignore and remove .build from tracking",
+      "lastCommitTime": "2026-03-30T12:06:32-06:00",
+      "lastCommitAgo": "7 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "faiirwaycircle": {
+      "branch": "fix/index-html-ios-pwa-meta",
+      "lastCommitHash": "4da8c285",
+      "lastCommitMsg": "fix: bridge OAuth callback from public domain",
+      "lastCommitTime": "2026-05-17T23:31:22-06:00",
+      "lastCommitAgo": "4 days ago",
+      "dirty": 0,
+      "health": "recent"
+    },
+    "fairway-circle": {
+      "branch": "main",
+      "lastCommitHash": "afdf0c1f",
+      "lastCommitMsg": "fix: bridge Supabase OAuth back to app",
+      "lastCommitTime": "2026-05-17T23:25:51-06:00",
+      "lastCommitAgo": "4 days ago",
+      "dirty": 0,
+      "health": "recent"
+    },
+    "formgod": {
+      "branch": "main",
+      "lastCommitHash": "56d57b54",
+      "lastCommitMsg": "Add FormGod QA notes",
+      "lastCommitTime": "2026-05-02T03:01:43-06:00",
+      "lastCommitAgo": "3 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "fridge-app": {
+      "branch": "main",
+      "lastCommitHash": "a5314096",
+      "lastCommitMsg": "v2: 100% offline - 35+ recetas mexicanas, sin API key",
+      "lastCommitTime": "2026-03-21T15:37:59-06:00",
+      "lastCommitAgo": "9 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "ghost": {
+      "branch": "main",
+      "lastCommitHash": "78f4b65d",
+      "lastCommitMsg": "Document Ghost self-audit demo and storage roadmap",
+      "lastCommitTime": "2026-05-09T14:03:16-06:00",
+      "lastCommitAgo": "12 days ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "glances": {
+      "branch": "fix/memory-negative-values-lxc",
+      "lastCommitHash": "7a351ac3",
+      "lastCommitMsg": "fix: clamp memory used/percent to non-negative values for LXC containers",
+      "lastCommitTime": "2026-03-30T02:58:54-06:00",
+      "lastCommitAgo": "8 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "gobuster": {
+      "branch": "feat/rate-limit-flags",
+      "lastCommitHash": "2ce5e00b",
+      "lastCommitMsg": "feat: add --stop-on-rate-limit and --retry-on-rate-limit flags for dir mode",
+      "lastCommitTime": "2026-04-01T02:46:21-06:00",
+      "lastCommitAgo": "7 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "gstack": {
+      "branch": "main",
+      "lastCommitHash": "bf654871",
+      "lastCommitMsg": "v1.26.0.0 feat: V1 transcript ingest + per-skill gbrain manifests + retrieval surface (#1298)",
+      "lastCommitTime": "2026-05-02T08:40:30-07:00",
+      "lastCommitAgo": "3 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "hexstrike-ai": {
+      "branch": "master",
+      "lastCommitHash": "2c3832ff",
+      "lastCommitMsg": "Add agentskills.io-compatible skills directory and compatibility matrix",
+      "lastCommitTime": "2026-03-17T15:53:30-06:00",
+      "lastCommitAgo": "9 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "jc": {
+      "branch": "fix/ifconfig-hex-mask",
+      "lastCommitHash": "0937e1c4",
+      "lastCommitMsg": "fix: use slice [2:] instead of lstrip('0x') for hex masks",
+      "lastCommitTime": "2026-04-24T07:14:56-06:00",
+      "lastCommitAgo": "4 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "locust": {
+      "branch": "fix/html-report-use-total-rps",
+      "lastCommitHash": "47014596",
+      "lastCommitMsg": "fix: use total_rps in HTML report, add test for metric accuracy",
+      "lastCommitTime": "2026-03-30T14:46:11-06:00",
+      "lastCommitAgo": "7 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "lustracdmx": {
+      "branch": "main",
+      "lastCommitHash": "5e22e966",
+      "lastCommitMsg": "docs: professional README",
+      "lastCommitTime": "2026-03-20T18:14:34-06:00",
+      "lastCommitAgo": "9 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "maigret": {
+      "branch": "fix/romanticcollection-search-rate-limit",
+      "lastCommitHash": "bc34c1ba",
+      "lastCommitMsg": "chore: regenerate db metadata",
+      "lastCommitTime": "2026-05-02T06:32:35-06:00",
+      "lastCommitAgo": "3 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "memoryplaylist": {
+      "branch": "main",
+      "lastCommitHash": "d30afcee",
+      "lastCommitMsg": "Simplify Fryda playlist flow to photo first",
+      "lastCommitTime": "2026-05-06T06:35:00-06:00",
+      "lastCommitAgo": "2 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "mii-style-closet": {
+      "branch": "main",
+      "lastCommitHash": "549aae97",
+      "lastCommitMsg": "Remove Lovable branding from public metadata",
+      "lastCommitTime": "2026-05-06T00:16:48-06:00",
+      "lastCommitAgo": "2 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "mitmproxy": {
+      "branch": "fix/8194-xsrf-meta-token",
+      "lastCommitHash": "8705dfe1",
+      "lastCommitMsg": "Fix mitmweb xsrf token header",
+      "lastCommitTime": "2026-05-08T08:49:13-06:00",
+      "lastCommitAgo": "13 days ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "oftamologajojutla": {
+      "branch": "main",
+      "lastCommitHash": "0fc354cf",
+      "lastCommitMsg": "Remove Lovable traces from public metadata",
+      "lastCommitTime": "2026-05-06T00:59:45-06:00",
+      "lastCommitAgo": "2 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "phantom": {
+      "branch": "main",
+      "lastCommitHash": "3eecb0a6",
+      "lastCommitMsg": "🌱 Add AI Garden cross-reference",
+      "lastCommitTime": "2026-03-17T01:14:56-06:00",
+      "lastCommitAgo": "9 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "practologoacapulco": {
+      "branch": "main",
+      "lastCommitHash": "9d447503",
+      "lastCommitMsg": "Serve exact static HTML for SEO routes",
+      "lastCommitTime": "2026-05-09T16:33:44-06:00",
+      "lastCommitAgo": "12 days ago",
+      "dirty": 2,
+      "health": "stale"
+    },
+    "public-apis": {
+      "branch": "add-isgd-url-shortener-api",
+      "lastCommitHash": "ea045318",
+      "lastCommitMsg": "Add is.gd to URL Shorteners",
+      "lastCommitTime": "2026-03-30T02:35:41-06:00",
+      "lastCommitAgo": "8 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "pyupgrade": {
+      "branch": "fix/1060-namedtuple-literal-negative",
+      "lastCommitHash": "c421ea8b",
+      "lastCommitMsg": "fix: handle negative Literal in NamedTuple rewrite",
+      "lastCommitTime": "2026-05-03T14:48:10-06:00",
+      "lastCommitAgo": "3 weeks ago",
+      "dirty": 1,
+      "health": "stale"
+    },
+    "responses": {
+      "branch": "fix/recorder-content-type-conflict",
+      "lastCommitHash": "ac93d8fc",
+      "lastCommitMsg": "fix(test): unwind mock inside test_add_from_file instead of teardown",
+      "lastCommitTime": "2026-04-25T01:07:53-06:00",
+      "lastCommitAgo": "4 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "rich": {
+      "branch": "fix/fileproxy-isatty-delegation",
+      "lastCommitHash": "8bb491b3",
+      "lastCommitMsg": "fix: delegate isatty() to proxied file in FileProxy",
+      "lastCommitTime": "2026-03-30T02:42:40-06:00",
+      "lastCommitAgo": "8 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "rocio": {
+      "branch": "main",
+      "lastCommitHash": "01a8156e",
+      "lastCommitMsg": "Curate Rocio botanical photos",
+      "lastCommitTime": "2026-05-06T09:30:53-06:00",
+      "lastCommitAgo": "2 weeks ago",
+      "dirty": 1,
+      "health": "stale"
+    },
+    "rubashka-market-reborn": {
+      "branch": "main",
+      "lastCommitHash": "88d8c898",
+      "lastCommitMsg": "Rename public product asset path",
+      "lastCommitTime": "2026-05-06T00:59:47-06:00",
+      "lastCommitAgo": "2 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "schedule": {
+      "branch": "fix/guard-unit-none-in-repr",
+      "lastCommitHash": "2a0eedef",
+      "lastCommitMsg": "fix: guard against self.unit being None in Job.__repr__",
+      "lastCommitTime": "2026-03-30T02:50:03-06:00",
+      "lastCommitAgo": "8 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "scrapy": {
+      "branch": "fix/genspider-edit-module-not-found",
+      "lastCommitHash": "f148fc08",
+      "lastCommitMsg": "fix: open spider file directly in genspider --edit instead of calling scrapy edit",
+      "lastCommitTime": "2026-03-30T02:54:32-06:00",
+      "lastCommitAgo": "8 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "sentinel": {
+      "branch": "main",
+      "lastCommitHash": "28aeb47a",
+      "lastCommitMsg": "Add AI analysis verification documentation",
+      "lastCommitTime": "2026-03-17T15:53:06-06:00",
+      "lastCommitAgo": "9 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "sentry-python": {
+      "branch": "fix/5701-drop-scrubbed-user-ip",
+      "lastCommitHash": "6c91d53d",
+      "lastCommitMsg": "Drop scrubbed user IP addresses",
+      "lastCommitTime": "2026-05-11T10:34:56-06:00",
+      "lastCommitAgo": "10 days ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "sherlock": {
+      "branch": "fix/gnome-vcs-patched-false-negatives",
+      "lastCommitHash": "1cf54e71",
+      "lastCommitMsg": "fix: remove GNOME VCS (Cloudflare WAF blocks CI validation)",
+      "lastCommitTime": "2026-04-24T05:57:40-06:00",
+      "lastCommitAgo": "4 weeks ago",
+      "dirty": 1,
+      "health": "stale"
+    },
+    "spiderfoot": {
+      "branch": "fix/robots-txt-whitespace-disallow",
+      "lastCommitHash": "cbd30ae5",
+      "lastCommitMsg": "fix: ignore whitespace-only Disallow paths in extractUrlsFromRobotsTxt",
+      "lastCommitTime": "2026-03-30T02:52:32-06:00",
+      "lastCommitAgo": "8 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "stinson-claw": {
+      "branch": "main",
+      "lastCommitHash": "9f9e36e1",
+      "lastCommitMsg": "Allow Appium sessions to reuse WDA URL",
+      "lastCommitTime": "2026-05-09T13:59:19-06:00",
+      "lastCommitAgo": "12 days ago",
+      "dirty": 4,
+      "health": "stale"
+    },
+    "textual": {
+      "branch": "main",
+      "lastCommitHash": "04b03c8d",
+      "lastCommitMsg": "Merge pull request #6455 from Textualize/sel-disappear-fix",
+      "lastCommitTime": "2026-03-29T10:56:02+07:00",
+      "lastCommitAgo": "8 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "thefuck": {
+      "branch": "fix/sudo-shell-agnostic-and-operator",
+      "lastCommitHash": "d0c22f5a",
+      "lastCommitMsg": "fix: use shell-agnostic 'and' operator in sudo rule instead of hardcoded '&&'",
+      "lastCommitTime": "2026-03-30T03:11:39-06:00",
+      "lastCommitAgo": "8 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "tldr": {
+      "branch": "es/docker-translations",
+      "lastCommitHash": "2b4fbce4",
+      "lastCommitMsg": "feat(es): add Spanish translations for common tools",
+      "lastCommitTime": "2026-04-01T19:13:00-06:00",
+      "lastCommitAgo": "7 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "tuwebideal": {
+      "branch": "main",
+      "lastCommitHash": "0022be39",
+      "lastCommitMsg": "Remove Lovable branding from public metadata",
+      "lastCommitTime": "2026-05-06T00:16:50-06:00",
+      "lastCommitAgo": "2 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    },
+    "vulcan": {
+      "branch": "main",
+      "lastCommitHash": "d3da156b",
+      "lastCommitMsg": "Add verification checklists and platform compatibility matrix",
+      "lastCommitTime": "2026-03-17T15:52:47-06:00",
+      "lastCommitAgo": "9 weeks ago",
+      "dirty": 0,
+      "health": "stale"
+    }
+  },
+  "crons": [],
+  "prs": [
+    {
+      "number": 1061,
+      "repository": {
+        "name": "pyupgrade",
+        "nameWithOwner": "asottile/pyupgrade"
+      },
+      "state": "open",
+      "title": "fix: handle Literal with negative numbers in NamedTuple rewrite",
+      "updatedAt": "2026-05-03T20:49:11Z",
+      "url": "https://github.com/asottile/pyupgrade/pull/1061"
+    },
+    {
+      "number": 45,
+      "repository": {
+        "name": "VisionClaw",
+        "nameWithOwner": "Intent-Lab/VisionClaw"
+      },
+      "state": "open",
+      "title": "feat: complete remote gateway support — iOS + Android (fixes #35)",
+      "updatedAt": "2026-05-04T03:26:12Z",
+      "url": "https://github.com/Intent-Lab/VisionClaw/pull/45"
+    },
+    {
+      "number": 44,
+      "repository": {
+        "name": "VisionClaw",
+        "nameWithOwner": "Intent-Lab/VisionClaw"
+      },
+      "state": "open",
+      "title": "fix: Android security hardening + resource leak fixes",
+      "updatedAt": "2026-05-04T03:22:36Z",
+      "url": "https://github.com/Intent-Lab/VisionClaw/pull/44"
+    },
+    {
+      "number": 43,
+      "repository": {
+        "name": "VisionClaw",
+        "nameWithOwner": "Intent-Lab/VisionClaw"
+      },
+      "state": "open",
+      "title": "security: migrate Android secrets to EncryptedSharedPreferences",
+      "updatedAt": "2026-04-06T11:12:43Z",
+      "url": "https://github.com/Intent-Lab/VisionClaw/pull/43"
+    },
+    {
+      "number": 41,
+      "repository": {
+        "name": "VisionClaw",
+        "nameWithOwner": "Intent-Lab/VisionClaw"
+      },
+      "state": "open",
+      "title": "security: migrate iOS secrets from UserDefaults to Keychain",
+      "updatedAt": "2026-04-06T11:06:53Z",
+      "url": "https://github.com/Intent-Lab/VisionClaw/pull/41"
+    },
+    {
+      "number": 1267,
+      "repository": {
+        "name": "arrow",
+        "nameWithOwner": "arrow-py/arrow"
+      },
+      "state": "open",
+      "title": "fix(types): use Union[Arrow, dt_datetime] for span_range and interval start/end params",
+      "updatedAt": "2026-05-04T03:26:10Z",
+      "url": "https://github.com/arrow-py/arrow/pull/1267"
+    },
+    {
+      "number": 1627,
+      "repository": {
+        "name": "cloudflared",
+        "nameWithOwner": "cloudflare/cloudflared"
+      },
+      "state": "open",
+      "title": "fix: use 'auto' as default protocol for quick tunnels",
+      "updatedAt": "2026-05-04T02:54:31Z",
+      "url": "https://github.com/cloudflare/cloudflared/pull/1627"
+    },
+    {
+      "number": 3344,
+      "repository": {
+        "name": "nmap",
+        "nameWithOwner": "nmap/nmap"
+      },
+      "state": "open",
+      "title": "fix(nselib/url): scope path params to segment per RFC 3986 s3.3",
+      "updatedAt": "2026-05-04T02:54:15Z",
+      "url": "https://github.com/nmap/nmap/pull/3344"
+    },
+    {
+      "number": 3343,
+      "repository": {
+        "name": "nmap",
+        "nameWithOwner": "nmap/nmap"
+      },
+      "state": "open",
+      "title": "fix: show correct protocol family in --packet-trace for IPv6 scans",
+      "updatedAt": "2026-05-21T19:20:01Z",
+      "url": "https://github.com/nmap/nmap/pull/3343"
+    },
+    {
+      "number": 2165,
+      "repository": {
+        "name": "impacket",
+        "nameWithOwner": "fortra/impacket"
+      },
+      "state": "open",
+      "title": "fix: support 32KB page sizes in ESE parser for Windows Server 2025",
+      "updatedAt": "2026-04-29T19:08:59Z",
+      "url": "https://github.com/fortra/impacket/pull/2165"
+    },
+    {
+      "number": 2209,
+      "repository": {
+        "name": "cookiecutter",
+        "nameWithOwner": "cookiecutter/cookiecutter"
+      },
+      "state": "open",
+      "title": "feat: add _force_render option to bypass binary detection for text files",
+      "updatedAt": "2026-04-24T13:17:11Z",
+      "url": "https://github.com/cookiecutter/cookiecutter/pull/2209"
+    },
+    {
+      "number": 2848,
+      "repository": {
+        "name": "sherlock",
+        "nameWithOwner": "sherlock-project/sherlock"
+      },
+      "state": "open",
+      "title": "fix: percent-encode username in URL to handle non-ASCII characters (fixes UnicodeDecodeError)",
+      "updatedAt": "2026-05-21T19:17:41Z",
+      "url": "https://github.com/sherlock-project/sherlock/pull/2848"
+    },
+    {
+      "number": 2847,
+      "repository": {
+        "name": "sherlock",
+        "nameWithOwner": "sherlock-project/sherlock"
+      },
+      "state": "open",
+      "title": "fix: cancel pending futures on SIGINT to prevent traceback on exit (Python 3.13+)",
+      "updatedAt": "2026-05-21T19:17:39Z",
+      "url": "https://github.com/sherlock-project/sherlock/pull/2847"
+    },
+    {
+      "number": 424,
+      "repository": {
+        "name": "cai",
+        "nameWithOwner": "aliasrobotics/cai"
+      },
+      "state": "open",
+      "title": "Fix infinite loop in fix_message_list with multiple tool_calls",
+      "updatedAt": "2026-05-04T02:54:32Z",
+      "url": "https://github.com/aliasrobotics/cai/pull/424"
+    }
+  ],
+  "weather": {
+    "cdmx": {
+      "temp": "25",
+      "feelsLike": "25",
+      "humidity": "36",
+      "condition": "Partly cloudy",
+      "windKph": "8",
+      "icon": "⛅",
+      "updated": "2026-05-21T14:44:18.086916-06:00"
+    },
+    "acapulco": {
+      "temp": "32",
+      "feelsLike": "37",
+      "humidity": "71",
+      "condition": "Sunny",
+      "windKph": "19",
+      "icon": "☀️",
+      "updated": "2026-05-21T14:44:18.086916-06:00"
+    }
+  },
+  "openclawStatus": {
+    "status": "warn",
+    "raw": "▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n██░▄▄▄░██░▄▄░██░▄▄▄██░▀██░██░▄▄▀██░████░▄▄▀██░███░██\n██░███░██░▀▀░██░▄▄▄██░█░█░██░█████░████░▀▀░██░█░█░██\n██░▀▀▀░██░█████░▀▀▀██░██▄░██░▀▀▄██░▀▀░█░██░██▄▀▄▀▄██\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n                  🦞 OPENCLAW 🦞                    \n \n┌  OpenClaw doctor\n│\n◇  Config warnings ───────────────────────────────────────────────────────╮\n│                                                                         │\n│  - plug"
+  },
+  "infrastructure": {
+    "host": "Mac mini M4",
+    "ip": "local-only",
+    "os": "macOS 26.4.1",
+    "arch": "arm64",
+    "dashboardPort": 8080
+  },
+  "tokens": {
+    "plan": "Claude Max 5x",
+    "promo": "2x until March 27",
+    "model_main": "claude-opus-4-6",
+    "model_crons": "claude-sonnet-4"
+  }
+}

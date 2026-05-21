@@ -1393,10 +1393,21 @@ function renderOSSPRs(markdown) {
 // ====== FETCH STATE ======
 async function fetchState() {
   try {
-    let res = await fetch('api/state?t=' + Date.now());
-    if (!res.ok) res = await fetch('state.json?t=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    STATE = await res.json();
+    const urls = ['api/state?t=', 'api/state.json?t=', 'state.json?t='];
+    let data = null;
+    let lastErr = null;
+    for (const url of urls) {
+      try {
+        const res = await fetch(url + Date.now());
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        data = await res.json();
+        break;
+      } catch (e) {
+        lastErr = e;
+      }
+    }
+    if (!data) throw lastErr || new Error('No state source available');
+    STATE = data;
     lastFetchTime = Date.now();
     render();
   } catch (e) {
