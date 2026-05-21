@@ -11,12 +11,12 @@ const MIME = {
   '.json': 'application/json', '.png': 'image/png', '.svg': 'image/svg+xml'
 };
 
-// Regenerate state every 15s (async — never blocks HTTP requests)
+// Regenerate state every 30s (async — never blocks HTTP requests)
 let stateGenerating = false;
 function regenState() {
   if (stateGenerating) return;
   stateGenerating = true;
-  const child = exec('python3 update-state.py', { cwd: DIR, timeout: 12000, env: process.env });
+  const child = exec('python3 update-state.py', { cwd: DIR, timeout: 25000, env: process.env });
   child.on('close', (code) => {
     if (code !== 0 && code !== null) {
       console.error(`[${new Date().toISOString()}] State generation exited with code ${code}`);
@@ -27,17 +27,16 @@ function regenState() {
     console.error(`[${new Date().toISOString()}] State generation error:`, e.message);
     stateGenerating = false;
   });
-  // Kill if still running after 12s
   setTimeout(() => {
     if (stateGenerating) {
       child.kill();
       console.error(`[${new Date().toISOString()}] State generation timed out, killed`);
       stateGenerating = false;
     }
-  }, 12000);
+  }, 25000);
 }
 regenState();
-setInterval(regenState, 15000);
+setInterval(regenState, 30000);
 
 const startTime = Date.now();
 

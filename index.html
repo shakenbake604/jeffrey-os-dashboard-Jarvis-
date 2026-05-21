@@ -965,7 +965,7 @@ async function runCron(cronId) {
   const btn = event && event.target;
   if (btn) { btn.disabled = true; btn.textContent = 'Running...'; }
   try {
-    const res = await fetch('/api/cron/' + encodeURIComponent(cronId) + '/run', { method: 'POST' });
+    const res = await fetch('api/cron/' + encodeURIComponent(cronId) + '/run', { method: 'POST' });
     const data = await res.json();
     if (data.ok) {
       if (btn) { btn.textContent = 'Started!'; btn.style.borderColor = 'var(--green)'; }
@@ -984,7 +984,7 @@ async function runCron(cronId) {
 
 async function toggleCron(cronId) {
   try {
-    const res = await fetch('/api/cron/' + encodeURIComponent(cronId) + '/toggle', { method: 'POST' });
+    const res = await fetch('api/cron/' + encodeURIComponent(cronId) + '/toggle', { method: 'POST' });
     const data = await res.json();
     if (data.ok) {
       setTimeout(() => { fetchCrons(); fetchState(); }, 1000);
@@ -1393,7 +1393,8 @@ function renderOSSPRs(markdown) {
 // ====== FETCH STATE ======
 async function fetchState() {
   try {
-    const res = await fetch('/api/state?t=' + Date.now());
+    let res = await fetch('api/state?t=' + Date.now());
+    if (!res.ok) res = await fetch('state.json?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     STATE = await res.json();
     lastFetchTime = Date.now();
@@ -1410,7 +1411,7 @@ async function fetchState() {
 // ====== FETCH CRONS (live from openclaw) ======
 async function fetchCrons() {
   try {
-    const res = await fetch('/api/crons?t=' + Date.now());
+    const res = await fetch('api/crons?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
     // API returns {jobs: [...]} or array directly
@@ -1419,20 +1420,39 @@ async function fetchCrons() {
     render();
   } catch (e) {
     console.error('Cron fetch failed:', e);
+    if (STATE && STATE.crons) {
+      CRONS = STATE.crons;
+      lastCronFetchTime = Date.now();
+      render();
+    }
   }
 }
 
 // ====== FETCH OSS QUEUE ======
 async function fetchOSSQueue() {
   try {
-    const res = await fetch('/api/contribution-queue?t=' + Date.now());
+    const res = await fetch('api/contribution-queue?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const md = await res.text();
     renderOSSPRs(md);
   } catch (e) {
     console.error('OSS queue fetch failed:', e);
-    document.getElementById('oss-prs').innerHTML = '<div class="dim">Failed to load</div>';
+    renderOSSFromState();
   }
+}
+
+function renderOSSFromState() {
+  const el = document.getElementById('oss-prs');
+  const prs = (STATE && STATE.prs) ? STATE.prs : [];
+  if (!prs.length) { el.innerHTML = '<div class="dim">No active PRs found</div>'; return; }
+  el.innerHTML = prs.slice(0, 8).map(pr => {
+    const repo = pr.repository && (pr.repository.nameWithOwner || pr.repository.name) || '';
+    return '<div class="oss-pr">' +
+      '<span class="badge badge-running">OPEN</span>' +
+      '<span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="' + (pr.title || '') + '">#' + pr.number + ' ' + (pr.title || '') + '</span>' +
+      '<span class="oss-pr-repo">' + repo + '</span>' +
+    '</div>';
+  }).join('');
 }
 
 // ====== FETCH WEATHER ======
@@ -1480,7 +1500,7 @@ setInterval(() => {
 // ====== TERMINAL LOG ======
 async function fetchLog() {
   try {
-    const res = await fetch('/api/cron-log?t=' + Date.now());
+    const res = await fetch('api/cron-log?t=' + Date.now());
     if (!res.ok) return;
     const data = await res.json();
     const el = document.getElementById('terminal-log');

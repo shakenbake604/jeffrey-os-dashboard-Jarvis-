@@ -164,10 +164,16 @@ def get_uptime():
     return raw
 
 def get_github_prs():
-    """Fetch open GitHub PRs authored by juliosuas using gh CLI."""
+    """Fetch open GitHub PRs authored by juliosuas using gh CLI.
+
+    Use `gh search prs` instead of `gh pr list`: this dashboard is a public
+    operating view, not just the current repo. `gh pr list` only sees one repo
+    and made the GitHub Pages build look empty outside the local network.
+    """
     try:
         raw = run(
-            "gh pr list --author juliosuas --limit 20 --json number,title,state,mergeable,repository 2>/dev/null",
+            "gh search prs --author juliosuas --state open --limit 50 "
+            "--json number,title,state,repository,url,updatedAt 2>/dev/null",
             timeout=15
         )
         if not raw:
@@ -223,18 +229,29 @@ def _weather_icon(code):
     return "🌤️"
 
 def get_openclaw_status():
-    """Check OpenClaw system health."""
+    """Check OpenClaw system health. Cached for 5 min — `doctor` is expensive."""
+    cache_path = "/tmp/openclaw-doctor-cache.json"
+    try:
+        if os.path.exists(cache_path) and (time.time() - os.path.getmtime(cache_path)) < 300:
+            with open(cache_path) as f:
+                return json.load(f)
+    except Exception:
+        pass
     try:
         raw = run("~/homebrew/bin/openclaw doctor --non-interactive 2>&1", timeout=15)
         if not raw:
-            return {"status": "unknown", "raw": ""}
-        ok = "all systems" in raw.lower() or "healthy" in raw.lower() or "ok" in raw.lower()
-        return {
-            "status": "ok" if ok else "warn",
-            "raw": raw[:500],
-        }
+            result = {"status": "unknown", "raw": ""}
+        else:
+            ok = "all systems" in raw.lower() or "healthy" in raw.lower() or "ok" in raw.lower()
+            result = {"status": "ok" if ok else "warn", "raw": raw[:500]}
     except Exception as e:
-        return {"status": "error", "error": str(e)}
+        result = {"status": "error", "error": str(e)}
+    try:
+        with open(cache_path, "w") as f:
+            json.dump(result, f)
+    except Exception:
+        pass
+    return result
 
 # Build state — parallelize
 with ThreadPoolExecutor(max_workers=8) as pool:
